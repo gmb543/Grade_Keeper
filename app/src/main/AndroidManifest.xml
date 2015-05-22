@@ -32,6 +32,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.gmbordelon.grade_keeper.MainActivity" />
         </activity>
+        <activity
+            android:name=".NewCourseActivity2"
+            android:label="@string/title_activity_new_course_activity2" >
+        </activity>
     </application>
 
 </manifest>

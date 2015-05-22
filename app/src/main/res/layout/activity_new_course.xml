@@ -7,65 +7,96 @@
     tools:context="com.example.gmbordelon.grade_keeper.NewCourseActivity"
     android:background="#ff5357b4">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter the Course Name:"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/courseName"
+        android:hint="Course Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:textColorHint="#FFFFFF"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Enter the number of..."
         android:id="@+id/textView2"
-        android:layout_marginTop="47dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/numHomeworks"
-        android:layout_alignEnd="@+id/numHomeworks" />
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/numHomeworks"
+        android:layout_centerHorizontal="true" />
 
 
     <EditText
         android:id="@+id/numHomeworks"
-        android:hint="Enter Homeworks"
+        android:hint="Homeworks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="24dp"
-        android:text="    Homeworks"
+        android:textSize="24sp"
+        android:text=""
         android:textColorHint="#FFFFFF"
         android:textColor="#ffffffff"
-        android:textAlignment="center"
-        android:layout_marginTop="64dp"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:background="#ff2ba89f"/>
+        android:layout_above="@+id/numQuizzes"
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/numQuizzes"
-        android:hint="Enter Quizzes"
+        android:hint="   Quizzes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="24dp"
-        android:text="    Quizzes"
+        android:textSize="24sp"
+        android:text=""
         android:textColorHint="#FFFFFF"
         android:textColor="#ffffffff"
-        android:textAlignment="center"
-        android:background="#ff2ba89f"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/numTests"
+        android:layout_alignLeft="@+id/numHomeworks"
+        android:layout_alignStart="@+id/numHomeworks"
+        android:layout_alignRight="@+id/numHomeworks"
+        android:layout_alignEnd="@+id/numHomeworks" />
 
     <EditText
         android:id="@+id/numTests"
-        android:hint="Enter Tests"
+        android:hint="     Tests"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:textSize="24dp"
-        android:text="      Tests"
+        android:textSize="24sp"
+        android:text=""
         android:textColorHint="#FFFFFF"
         android:textColor="#ffffffff"
-        android:textAlignment="center"
-        android:background="#ff2ba89f"
-        android:layout_marginBottom="136dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/nextButton"
+        android:layout_marginBottom="50dp"
+        android:layout_alignLeft="@+id/numQuizzes"
+        android:layout_alignStart="@+id/numQuizzes"
+        android:layout_alignRight="@+id/numQuizzes"
+        android:layout_alignEnd="@+id/numQuizzes" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next -->"
+        android:id="@+id/nextButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:singleLine="true"
+        android:background="#ff2ba89f" />
 
 
 

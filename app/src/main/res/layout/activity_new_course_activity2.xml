@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.gmbordelon.grade_keeper.NewCourseActivity2"
+    android:background="#ff5357b4">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter the weighted percentages of the total grade for each category:"
+        android:textAlignment="center"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/percentHW"
+        android:hint="Homework %"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp" />
+
+    <EditText
+        android:id="@+id/percentQuiz"
+        android:hint="Quiz %"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"/>
+
+    <EditText
+        android:id="@+id/percentTest"
+        android:hint="Test %"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:layout_above="@+id/percentMidTerm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/percentMidTerm"
+        android:hint="Midterm %"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:layout_above="@+id/percentFinal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
+    <EditText
+        android:id="@+id/percentFinal"
+        android:hint="Final %"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/percentTest"
+        android:layout_alignStart="@+id/percentTest" />
+
+
+
+</RelativeLayout>

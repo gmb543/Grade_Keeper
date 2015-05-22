@@ -16,11 +16,20 @@ public class MainActivity extends ViewCourseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button newCourseButton = (Button) findViewById(R.id.viewCourse_button);
-        newCourseButton.setOnClickListener(new View.OnClickListener() {
+        Button viewCourseButton = (Button) findViewById(R.id.viewCourse_button);
+        viewCourseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ViewCourseActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button newCourseButton = (Button) findViewById(R.id.newCourse_button);
+        newCourseButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NewCourseActivity.class);
                 startActivity(intent);
             }
         });
